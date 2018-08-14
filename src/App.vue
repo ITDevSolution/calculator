@@ -8,7 +8,12 @@
             <a class="nav-link active" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Calculator</a>
+            <a class="nav-link" href="#">
+              <router-link to="/">
+              Calculator
+              </router-link>
+              
+              </a>
           </li>
           <li class="nav-item">
             <a class="nav-link disabled" href="#">Disabled</a>
