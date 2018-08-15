@@ -1,33 +1,32 @@
 <template>
   <div id="app">
   <div class="container">
+    
     <div class="card text-center">
       <div class="card-header">
         <ul class="nav nav-pills card-header-pills">
+          
           <li class="nav-item">
-            <a class="nav-link active" href="#">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">
-              <router-link to="/">
-              Calculator
+
+              <router-link to="/HelloWorld" class="nav-link">
+              Hello World Vue
               </router-link>
-              
-              </a>
+
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
+            <router-link to="/Calculator" class="nav-link">Calculator</router-link>
           </li>
         </ul>
       </div>
+    
       <div class="card-body">
-        <h3 class="card-title">Aplication Calculator Simple in Vue-CLI</h3>
-        <img alt="Vue logo" src="./assets/logo.png">
-        <hr>
-        <p class="card-text">Desarrollado por ITDEVSOLUTION.NET </p>
+        <router-view></router-view>
       </div>
+      
     </div>
   </div>  
+
+  
 
     
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
